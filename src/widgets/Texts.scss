@@ -1,0 +1,17 @@
+.animated-text {  
+  position: absolute;  
+  left: 50%;  
+  transform: translateX(-50%);  
+  transition: top 1s ease, opacity 1s ease, transform 1s ease;  
+  white-space: nowrap;  
+}  
+  
+/* 你可能还需要设置body或其他容器的样式来确保文本能垂直居中 */  
+.scroll-text-wrap {  
+  height: 100%;  
+  margin: 0;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  overflow: hidden; /* 防止页面滚动 */  
+}

@@ -1,0 +1,27 @@
+@mixin border-common-style($width, $height, $position) {
+  position: absolute;
+  background-color: #e6e6e6;
+  z-index: 10;
+  width: $width;
+  height: $height;
+  #{$position}: 0;
+}
+
+.border {
+  &-top {
+    @include border-common-style(100%, 12px, top);
+    left: 0;
+  }
+  &-right {
+    @include border-common-style(12px, 100%, right);
+    top: 0;
+  }
+  &-left {
+    @include border-common-style(12px, 100%, left);
+    bottom: 0;
+  }
+  &-bottom {
+    @include border-common-style(100%, 12px, bottom); 
+    right: 0;
+  }
+}
