@@ -1,15 +1,15 @@
-.progress-bar-container {  
-  width: 100%;  
-  background-color: #eee;  
-  border-radius: 5px;  
-  overflow: hidden;  
-}  
-  
-.progress-bar {  
-  height: 10px; /* 你可以根据需要调整这个高度 */  
-  background-color: #4caf50; /* 你可以更改进度条的颜色 */  
-  text-align: center;  
-  color: white; /* 文本颜色 */  
-  line-height: 20px; /* 使文本垂直居中 */  
-  transition: width 0.1s ease-in-out; /* 动画效果 */  
+.progress-bar-container {
+  width: 100%;
+  background-color: #b3b3b3;
+  overflow: hidden;
+  height: 5px;
+  margin-top: 4px;
+  &.active {
+    display: block;
+  }
+  .progress-bar {
+    height: 10px; /* 你可以根据需要调整这个高度 */
+    background-color: #fff; /* 你可以更改进度条的颜色 */
+    transition: width 0.1s ease-in-out; /* 动画效果 */
+  }
 }
