@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import NavMenu from '../widgets/NavMenu';
 import './Header.scss'
+import Logo from '../widgets/Logo'
   
 const HamburgerMenu = () => {  
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +23,16 @@ const HamburgerMenu = () => {
   
   return (  
     <header className="header-container">
-      <a href="#">logo</a>
+      <Logo/>
       <NavMenu/>
-      <button
+      <div
         className={`ham-menu ${isOpen ? 'active' : ''}`}  
         onClick={toggleMenu}
       >
         <span></span>  
         <span></span>  
         <span></span>  
-      </button> 
+      </div> 
       <div  
         className={`off-screen-menu ${isOpen ? 'active' : ''}`}  
       >  

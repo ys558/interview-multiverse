@@ -1,0 +1,14 @@
+$logo-width: 34px;
+$logo-height: 34px;
+
+.logo {
+  display: block;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 21px;
+  width: $logo-width;
+  height: $logo-width;
+  background-image: url("http://www.feedmusic.com/images/logo-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

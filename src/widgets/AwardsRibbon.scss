@@ -1,0 +1,12 @@
+#awards-ribbon {
+  width: 90px;
+  height: 135px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/awwwards-ribbon.png");
+  z-index: 9999;
+  display: block;
+}
