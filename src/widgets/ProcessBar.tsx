@@ -20,8 +20,6 @@ const ProgressBar = ({
       const step = event.deltaY < 0 ? -3 : 3;
       const progressStatusRadtio = Math.max(0, Math.min(100, progress + step));
 
-      console.log(progressStatusRadtio);
-
       if (progressStatusRadtio === 100 || progressStatusRadtio === 0)
         setActive((prevState) => !prevState);
 
@@ -33,7 +31,7 @@ const ProgressBar = ({
     return () => {
       window.removeEventListener("wheel", handleWheel);
     };
-  }, [progress]);
+  }, [progress, setActive]);
 
   return (
     <div className={`progress-bar-container ${active ? "active" : ""}`}>
